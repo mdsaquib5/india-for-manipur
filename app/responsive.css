@@ -1,0 +1,217 @@
+/* ============================================================
+   INDIA FOR MANIPUR — Responsive Styles
+   Desktop-first approach. Breakpoints: 1200, 1024, 768, 480.
+   ============================================================ */
+
+/* ---- 1200px ---- */
+@media (max-width: 1200px) {
+  :root {
+    --section-padding: 100px 0;
+  }
+
+  .human-cost__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+  }
+
+  .solutions__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contribution__item {
+    gap: 3rem;
+  }
+}
+
+/* ---- 1024px ---- */
+@media (max-width: 1024px) {
+  :root {
+    --section-padding: 80px 0;
+  }
+
+  .navbar__links {
+    gap: 1.5rem;
+  }
+
+  .contribution__item {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .contribution__item--reverse {
+    direction: ltr;
+  }
+
+  .generation__inner {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .generation__image-wrap {
+    aspect-ratio: 16/9;
+  }
+
+  .footer__top {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .footer__disclaimer {
+    text-align: left;
+  }
+
+  .footer__bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* ---- 768px (Tablet) ---- */
+@media (max-width: 768px) {
+  :root {
+    --section-padding: 64px 0;
+    --navbar-height: 60px;
+  }
+
+  /* Navbar */
+  .navbar__links {
+    display: none;
+  }
+
+  .navbar__cta {
+    display: none;
+  }
+
+  .navbar__hamburger {
+    display: flex;
+  }
+
+  /* Hero */
+  .hero__headline {
+    font-size: clamp(2.5rem, 10vw, 4rem);
+  }
+
+  .hero__scroll {
+    bottom: 1.5rem;
+  }
+
+  /* Contribution */
+  .contribution__items {
+    gap: 4rem;
+  }
+
+  /* BeforeAfter */
+  .before-after__captions {
+    grid-template-columns: 1fr;
+  }
+
+  /* HumanCost */
+  .human-cost__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Solutions */
+  .solutions__grid {
+    grid-template-columns: 1fr;
+    max-width: 480px;
+  }
+
+  /* Voices */
+  .voices__card {
+    padding: 2rem 1.5rem;
+  }
+
+  /* Movement */
+  .movement__map-container {
+    max-width: 400px;
+  }
+
+  /* CTA */
+  .cta__buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Footer */
+  .footer {
+    padding: 3rem 1.5rem 1.5rem;
+  }
+
+  .footer__links {
+    gap: 0.5rem 1.5rem;
+  }
+}
+
+/* ---- 480px (Mobile) ---- */
+@media (max-width: 480px) {
+  :root {
+    --section-padding: 52px 0;
+  }
+
+  .container {
+    padding: 0 1.25rem;
+  }
+
+  /* Hero */
+  .hero__headline {
+    font-size: clamp(2rem, 12vw, 3rem);
+  }
+
+  .hero__pre-title::before,
+  .hero__pre-title::after {
+    display: none;
+  }
+
+  /* Human Cost */
+  .human-cost__grid {
+    grid-template-columns: 1fr;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+
+  /* Timeline */
+  .timeline__event {
+    padding-left: 56px;
+    padding-bottom: 3rem;
+  }
+
+  /* Silence */
+  .silence__line {
+    font-size: clamp(1.6rem, 8vw, 2.5rem);
+  }
+
+  /* Voices */
+  .voices__card {
+    padding: 1.75rem 1.25rem;
+  }
+
+  .voices__card::before {
+    font-size: 4rem;
+  }
+
+  /* CTA */
+  .cta__headline {
+    font-size: clamp(2.2rem, 10vw, 4rem);
+  }
+
+  /* BTN */
+  .btn {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.8rem;
+  }
+}
+
+/* ---- 360px (Very small mobile) ---- */
+@media (max-width: 360px) {
+  .hero__headline {
+    font-size: 2rem;
+  }
+
+  .hero__cta {
+    padding: 0.75rem 1.5rem;
+  }
+}
