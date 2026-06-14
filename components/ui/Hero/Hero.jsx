@@ -3,7 +3,6 @@ import { useRef } from 'react';
 import Image from 'next/image';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { heroData } from '@/constants/websiteData';
-import IndiaMap from './IndiaMap';
 
 const containerVariants = {
   hidden: {},
@@ -68,10 +67,6 @@ export default function Hero() {
         <motion.p className="hero__subheadline" variants={itemVariants}>
           {heroData.subheadline}
         </motion.p>
-
-        <motion.div className="hero__map-wrapper" variants={itemVariants}>
-          <IndiaMap />
-        </motion.div>
 
         <motion.div variants={itemVariants}>
           <a
