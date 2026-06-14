@@ -29,8 +29,8 @@ export default function Contribution() {
               <motion.article
                 key={item.id}
                 className={`contribution__item ${isReverse ? 'contribution__item--reverse' : ''}`}
-                initial={{ opacity: 0, x: isReverse ? 60 : -60 }}
-                whileInView={{ opacity: 1, x: 0 }}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: '-80px' }}
                 transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
                 aria-label={`${item.name} — ${item.role}`}

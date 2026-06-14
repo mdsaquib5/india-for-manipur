@@ -31,9 +31,9 @@ export default function Voices() {
   }, [voices.length]);
 
   const variants = {
-    enter: (dir) => ({ opacity: 0, x: dir * 40 }),
-    center: { opacity: 1, x: 0 },
-    exit: (dir) => ({ opacity: 0, x: dir * -40 }),
+    enter: () => ({ opacity: 0, y: 16 }),
+    center: { opacity: 1, y: 0 },
+    exit: () => ({ opacity: 0, y: -16 }),
   };
 
   return (
