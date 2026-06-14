@@ -2,6 +2,7 @@ import './globals.css';
 import './responsive.css';
 import Navbar from '@/components/layouts/Navbar/Navbar';
 import Footer from '@/components/layouts/Footer/Footer';
+import BackgroundMusic from '@/components/shared/BackgroundMusic/BackgroundMusic';
 
 export const metadata = {
   title: 'India For Manipur — A Humanitarian Awareness Campaign',
@@ -40,6 +41,7 @@ export default function RootLayout({ children }) {
         <Navbar />
         <main id="main-content">{children}</main>
         <Footer />
+        <BackgroundMusic />
       </body>
     </html>
   );
