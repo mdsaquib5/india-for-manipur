@@ -3,8 +3,6 @@ import { motion } from 'framer-motion';
 import SectionHeading from '@/components/shared/SectionHeading/SectionHeading';
 import { movementData } from '@/constants/websiteData';
 
-// Simplified India SVG with Manipur highlighted
-// Manipur is roughly in the northeast region
 function IndiaMap() {
   return (
     <svg
@@ -15,7 +13,6 @@ function IndiaMap() {
       role="img"
       aria-label="Map of India with Manipur highlighted in the northeast"
     >
-      {/* India outline — simplified path */}
       <path
         d="M200,30 L220,25 L255,30 L275,20 L300,28 L320,22 L340,30 L355,25 L370,35 L380,45 L375,60 L385,75 L390,90 L385,105 L395,120 L390,140 L400,155 L395,175 L405,195 L400,215 L410,230 L405,250 L395,265 L400,285 L390,300 L385,320 L375,335 L370,355 L360,370 L350,385 L340,395 L330,410 L320,420 L315,430 L310,445 L305,460 L300,470 L295,480 L290,490 L285,495 L280,490 L275,480 L270,468 L265,455 L260,445 L255,458 L250,470 L245,480 L240,490 L235,498 L230,505 L225,510 L220,500 L215,488 L210,475 L205,462 L200,450 L195,438 L190,425 L185,412 L180,400 L175,388 L170,376 L165,365 L160,352 L155,340 L148,328 L142,315 L138,302 L135,290 L132,278 L128,265 L130,252 L125,240 L120,228 L118,215 L120,200 L115,185 L110,170 L108,155 L112,140 L115,125 L118,110 L115,95 L118,80 L125,65 L135,52 L148,42 L162,35 L178,30 L195,28 Z"
         fill="rgba(212,175,55,0.06)"
@@ -23,14 +20,12 @@ function IndiaMap() {
         strokeWidth="1.5"
       />
 
-      {/* State borders — simplified internal lines */}
       <path
         d="M200,30 L200,150 M250,50 L250,200 M300,60 L300,200 M150,150 L380,150 M140,250 L390,250 M160,350 L370,350"
         stroke="rgba(255,255,255,0.04)"
         strokeWidth="0.8"
       />
 
-      {/* Manipur — northeast highlight */}
       <ellipse
         cx="370"
         cy="285"
@@ -41,7 +36,6 @@ function IndiaMap() {
         strokeWidth="2"
       />
 
-      {/* Glow pulse around Manipur */}
       <motion.ellipse
         cx="370"
         cy="285"
@@ -69,7 +63,6 @@ function IndiaMap() {
         style={{ transformOrigin: '370px 285px' }}
       />
 
-      {/* Animated light particles from across India toward Manipur */}
       {[
         { x: 200, y: 280, delay: 0 },
         { x: 160, y: 200, delay: 0.4 },
@@ -107,7 +100,6 @@ function IndiaMap() {
         />
       ))}
 
-      {/* Manipur label */}
       <text
         x="370"
         y="325"
@@ -121,7 +113,6 @@ function IndiaMap() {
         MANIPUR
       </text>
 
-      {/* India label */}
       <text
         x="240"
         y="260"

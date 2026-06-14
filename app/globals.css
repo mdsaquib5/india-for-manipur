@@ -108,6 +108,7 @@ ol {
   z-index: 9999;
   transition: top var(--transition-fast);
 }
+
 .skip-link:focus {
   top: 1rem;
 }
@@ -133,6 +134,7 @@ ol {
 
 /* ---- Reduced Motion ---- */
 @media (prefers-reduced-motion: reduce) {
+
   *,
   *::before,
   *::after {
@@ -189,6 +191,7 @@ ol {
   color: var(--accent-gold);
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 0.75rem;
 }
 
@@ -559,13 +562,11 @@ ol {
 .hero__overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    to bottom,
-    rgba(8, 8, 8, 0.3) 0%,
-    rgba(8, 8, 8, 0.55) 40%,
-    rgba(8, 8, 8, 0.9) 80%,
-    rgba(8, 8, 8, 1) 100%
-  );
+  background: linear-gradient(to bottom,
+      rgba(8, 8, 8, 0.3) 0%,
+      rgba(8, 8, 8, 0.55) 40%,
+      rgba(8, 8, 8, 0.9) 80%,
+      rgba(8, 8, 8, 1) 100%);
   z-index: 1;
 }
 
@@ -676,8 +677,17 @@ ol {
 }
 
 @keyframes scrollPulse {
-  0%, 100% { opacity: 0.3; transform: scaleY(1); }
-  50% { opacity: 1; transform: scaleY(1.2); }
+
+  0%,
+  100% {
+    opacity: 0.3;
+    transform: scaleY(1);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scaleY(1.2);
+  }
 }
 
 /* ============================================================
@@ -710,7 +720,7 @@ ol {
   direction: rtl;
 }
 
-.contribution__item--reverse > * {
+.contribution__item--reverse>* {
   direction: ltr;
 }
 
@@ -725,7 +735,7 @@ ol {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, transparent 60%, rgba(8,8,8,0.5));
+  background: linear-gradient(135deg, transparent 60%, rgba(8, 8, 8, 0.5));
   pointer-events: none;
 }
 
@@ -794,7 +804,7 @@ ol {
   overflow: hidden;
   cursor: ew-resize;
   user-select: none;
-  box-shadow: 0 24px 80px rgba(0,0,0,0.6);
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.6);
 }
 
 .before-after__img {
@@ -835,7 +845,7 @@ ol {
   align-items: center;
   justify-content: center;
   z-index: 11;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.5);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.5);
   pointer-events: none;
 }
 
@@ -1030,7 +1040,7 @@ ol {
   background: var(--bg-card);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-lg);
-  padding: 2.5rem 2rem;
+  padding: 1.6rem 2rem;
   text-align: center;
   transition: all var(--transition-medium);
   position: relative;
@@ -1060,7 +1070,7 @@ ol {
 
 .human-cost__number {
   font-family: var(--font-heading);
-  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-size: clamp(2.5rem, 5vw, 2rem);
   font-weight: 900;
   line-height: 1;
   margin-bottom: 0.75rem;
@@ -1122,7 +1132,7 @@ ol {
 .generation__image-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, rgba(8,8,8,0.6), transparent 50%);
+  background: linear-gradient(to top, rgba(8, 8, 8, 0.6), transparent 50%);
 }
 
 .generation__content {
@@ -1699,6 +1709,17 @@ ol {
   margin: 1.25rem auto;
 }
 
-.flag-bar span:nth-child(1) { flex: 1; background: var(--accent-saffron); }
-.flag-bar span:nth-child(2) { flex: 1; background: white; }
-.flag-bar span:nth-child(3) { flex: 1; background: var(--accent-green); }
+.flag-bar span:nth-child(1) {
+  flex: 1;
+  background: var(--accent-saffron);
+}
+
+.flag-bar span:nth-child(2) {
+  flex: 1;
+  background: white;
+}
+
+.flag-bar span:nth-child(3) {
+  flex: 1;
+  background: var(--accent-green);
+}
