@@ -84,8 +84,8 @@ function NationalRipple({ cx, cy }) {
   );
 }
 
-// Particle details configuration for gathering lights
-const LIGHTS_COUNT = 150;
+// Particle details configuration for gathering lights (optimized for performance)
+const LIGHTS_COUNT = 90;
 
 export default function IndiaMap() {
   const containerRef = useRef(null);
@@ -105,15 +105,21 @@ export default function IndiaMap() {
       // Coordinates distributed across India's active bounds
       const x = Math.random() * 380 + 70; // 70 to 450
       const y = Math.random() * 410 + 40; // 40 to 450
-      const duration = Math.random() * 4.5 + 3.5; // 3.5s to 8s
-      const delay = Math.random() * 8; // staggered entries
-      const size = Math.random() * 0.9 + 0.55; // 0.55px to 1.45px
+      const duration = Math.random() * 4.2 + 3.2; // 3.2s to 7.4s
+      const delay = Math.random() * 7; // staggered entries
+      const size = Math.random() * 0.8 + 0.55; // 0.55px to 1.35px
       
       // Calculate a slightly curved midway point to create organic flow paths
       const midX = x + (MANIPUR_CX - x) * 0.45 + (Math.random() * 30 - 15);
       const midY = y + (MANIPUR_CY - y) * 0.45 + (Math.random() * 30 - 15);
 
-      arr.push({ x, y, midX, midY, duration, delay, size });
+      // Relative delta offsets for GPU hardware acceleration
+      const dx = MANIPUR_CX - x;
+      const dy = MANIPUR_CY - y;
+      const midDx = midX - x;
+      const midDy = midY - y;
+
+      arr.push({ x, y, dx, dy, midDx, midDy, duration, delay, size });
     }
     return arr;
   }, []);
@@ -346,10 +352,10 @@ export default function IndiaMap() {
                 cy={p.y}
                 r={p.size}
                 fill="#FFF5C0"
-                initial={{ cx: p.x, cy: p.y, opacity: 0, scale: 0.5 }}
+                initial={{ x: 0, y: 0, opacity: 0, scale: 0.5 }}
                 animate={{
-                  cx: [p.x, p.midX, MANIPUR_CX],
-                  cy: [p.y, p.midY, MANIPUR_CY],
+                  x: [0, p.midDx, p.dx],
+                  y: [0, p.midDy, p.dy],
                   opacity: [0, 0.9, 1, 0],
                   scale: [0.5, 1.2, 0.3],
                 }}
@@ -358,9 +364,6 @@ export default function IndiaMap() {
                   delay: p.delay,
                   repeat: Infinity,
                   ease: [0.4, 0.0, 0.2, 1], // easeIn/out blend for organic flight speed
-                }}
-                style={{
-                  filter: 'drop-shadow(0 0 2px rgba(212, 175, 55, 0.8))',
                 }}
               />
             ))}
