@@ -1,8 +1,3 @@
-// ============================================================
-// INDIA FOR MANIPUR — Single Source of Truth
-// All website content lives here. No hardcoded strings in components.
-// ============================================================
-
 export const navigation = {
   logo: 'India For Manipur',
   links: [
@@ -30,7 +25,7 @@ export const contributionData = {
   items: [
     {
       id: 'mary-kom',
-      image: '/images/contribution_marykom.png',
+      image: '/images/1.jpg',
       imageAlt: 'A boxer representing the spirit of Mary Kom from Manipur',
       tag: 'World Champion',
       name: 'Mary Kom',
@@ -40,7 +35,7 @@ export const contributionData = {
     },
     {
       id: 'mirabai',
-      image: '/images/handloom_weaver.png',
+      image: '/images/3.jpg',
       imageAlt: 'Manipuri traditional artisan representing the spirit of Mirabai Chanu',
       tag: 'Olympic Silver',
       name: 'Mirabai Chanu',
@@ -50,7 +45,7 @@ export const contributionData = {
     },
     {
       id: 'polo',
-      image: '/images/before_festival.png',
+      image: '/images/5.jpg',
       imageAlt: 'A cultural scene from Manipur representing the birthplace of polo',
       tag: 'Cultural Heritage',
       name: 'The Birthplace of Polo',
@@ -60,7 +55,7 @@ export const contributionData = {
     },
     {
       id: 'handloom',
-      image: '/images/handloom_weaver.png',
+      image: '/images/handloom.jpg',
       imageAlt: 'Manipuri woman weaving on traditional handloom',
       tag: 'Living Tradition',
       name: 'Handloom & Textiles',
@@ -70,7 +65,7 @@ export const contributionData = {
     },
     {
       id: 'women',
-      image: '/images/hero_before.png',
+      image: '/images/Paibis.jpg',
       imageAlt: 'Women of Manipur in traditional cultural dress',
       tag: "Women's Power",
       name: "Meira Paibis",
@@ -80,7 +75,7 @@ export const contributionData = {
     },
     {
       id: 'military',
-      image: '/images/contribution_marykom.png',
+      image: '/images/solder.jpg',
       imageAlt: 'Representation of military service from Manipur',
       tag: 'National Service',
       name: 'Military Contribution',
@@ -98,13 +93,13 @@ export const beforeAfterData = {
     'These images show two faces of the same Manipur. One is memory. The other is the present.',
   before: {
     label: 'Before',
-    image: '/images/before_festival.png',
+    image: '/images/after.jpg',
     imageAlt: 'Imphal market — vibrant community life before the conflict',
     caption: 'The Ima Keithel market — one of the world\'s only all-women markets. Life, trade, and community.',
   },
   after: {
     label: 'After',
-    image: '/images/after_displacement.png',
+    image: '/images/before.jpg',
     imageAlt: 'Relief camps in Manipur — families displaced by the conflict',
     caption: 'Relief camps shelter thousands of families who have not returned home.',
   },
@@ -215,7 +210,7 @@ export const generationData = {
   preTitle: 'A Generation Waiting',
   headline: 'They Didn\'t Start\nThis Conflict',
   subheadline: 'Yet They Are Growing Up Inside It',
-  image: '/images/generation_children.png',
+  image: '/images/children-1.jpg',
   imageAlt: 'Children of Manipur in a classroom, representing hope and disrupted futures',
   body: [
     'Thousands of children across Manipur have had their education disrupted. Schools turned into relief camps. Teachers displaced. Exams missed. Childhoods interrupted.',

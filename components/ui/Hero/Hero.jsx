@@ -35,7 +35,7 @@ export default function Hero() {
       {/* Background Image */}
       <motion.div className="hero__bg" style={{ y: bgY }}>
         <Image
-          src="/images/hero_before.png"
+          src="/images/hero.jpg"
           alt="Traditional Manipuri women performing Ras Lila dance at a cultural festival"
           fill
           priority
