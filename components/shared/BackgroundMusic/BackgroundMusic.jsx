@@ -97,8 +97,16 @@ export default function BackgroundMusic() {
           {/* Control Panel */}
           <div className="bg-music-panel">
             <div className="bg-music-panel__header">
-              <span className="bg-music-title">Atmospheric Soundscape</span>
-              <span className="bg-music-subtitle">Ambient Loop</span>
+              <span className="bg-music-title">Ashvin bhaii</span>
+              <span className="bg-music-subtitle">AKA - Roshan Ghimire</span>
+              <a 
+                href="https://www.youtube.com/watch?v=BVUt5EhR_8A"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ fontSize: '0.7rem', color: 'var(--accent-gold)', textDecoration: 'none', display: 'block', marginTop: '2px' }}
+              >
+                From Manipur imphal ↗
+              </a>
             </div>
 
             <div className="bg-music-controls">
