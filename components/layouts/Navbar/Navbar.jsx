@@ -55,13 +55,13 @@ export default function Navbar() {
           </ul>
         </nav>
 
-        {/* Desktop CTA */}
         <a
-          href="#cta"
+          href="https://www.instagram.com/india4manipur?igsh=bDUxdnp5eGcwcTU3"
+          target="_blank"
+          rel="noopener noreferrer"
           className="navbar__cta"
-          onClick={(e) => handleNavClick(e, '#cta')}
         >
-          Stand With Manipur
+          Instagram
         </a>
 
         {/* Mobile Hamburger */}
@@ -93,12 +93,13 @@ export default function Navbar() {
           </a>
         ))}
         <a
-          href="#cta"
+          href="https://www.instagram.com/india4manipur?igsh=bDUxdnp5eGcwcTU3"
+          target="_blank"
+          rel="noopener noreferrer"
           className="btn btn-primary"
           style={{ textAlign: 'center' }}
-          onClick={(e) => handleNavClick(e, '#cta')}
         >
-          Stand With Manipur
+          Instagram
         </a>
       </nav>
     </header>
