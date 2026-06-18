@@ -32,7 +32,6 @@ export default function Hero() {
       ref={ref}
       aria-label="Hero — India For Manipur"
     >
-      {/* Background Image */}
       <motion.div className="hero__bg" style={{ y: bgY }}>
         <Image
           src="/images/hero.jpg"
@@ -61,7 +60,7 @@ export default function Hero() {
           className="hero__headline"
           variants={itemVariants}
         >
-          {heroData.headline}
+          {heroData.headline} <span className='red-manipur'>Manipur ?</span>
         </motion.h1>
 
         <motion.p className="hero__subheadline" variants={itemVariants}>

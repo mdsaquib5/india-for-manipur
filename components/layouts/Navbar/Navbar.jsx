@@ -35,7 +35,7 @@ export default function Navbar() {
           onClick={(e) => handleNavClick(e, '#story')}
           aria-label="India For Manipur - Go to top"
         >
-          India For <span>Manipur</span>
+          India For <span className="red-manipur">Manipur</span>
         </a>
 
         {/* Desktop Links */}

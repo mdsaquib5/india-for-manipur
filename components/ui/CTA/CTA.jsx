@@ -1,6 +1,8 @@
 'use client';
+import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { ctaData } from '@/constants/websiteData';
+import SupportModal from '../SupportModal/SupportModal';
 
 const sequenceVariants = {
   hidden: {},
@@ -22,6 +24,8 @@ const headlineVariants = {
 };
 
 export default function CTA() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   const handleShare = async () => {
     if (navigator.share) {
       try {
@@ -45,7 +49,7 @@ export default function CTA() {
   };
 
   const handleJoin = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    setIsModalOpen(true);
   };
 
   return (
@@ -118,6 +122,8 @@ export default function CTA() {
           ))}
         </motion.div>
       </div>
+
+      <SupportModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
     </section>
   );
 }

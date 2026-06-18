@@ -9,7 +9,7 @@ export default function Footer() {
           {/* Brand */}
           <div className="footer__brand">
             <p className="footer__logo">
-              India For <span>Manipur</span>
+              India For <span className="red-manipur">Manipur</span>
             </p>
             <p className="footer__tagline">{footerData.tagline}</p>
           </div>

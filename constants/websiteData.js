@@ -1,3 +1,13 @@
+import React from 'react';
+
+export const hm = (text) => {
+  if (typeof text !== 'string') return text;
+  const parts = text.split(/(Manipur)/g);
+  return parts.map((part, index) => 
+    part === 'Manipur' ? <span key={index} className="red-manipur">Manipur</span> : part
+  );
+};
+
 export const navigation = {
   logo: 'India For Manipur',
   links: [
@@ -12,16 +22,16 @@ export const navigation = {
 
 export const heroData = {
   preTitle: 'A Humanitarian Story',
-  headline: 'Do You Remember\nManipur?',
+  headline: 'Do You Remember',
   subheadline: 'Not the conflict. Not the headlines.\nThe people.',
   cta: 'Hear Their Story',
   scrollLabel: 'Scroll to explore',
 };
 
 export const contributionData = {
-  preTitle: "What Manipur Gave India",
-  headline: 'Before Asking India To Help Manipur',
-  subheadline: 'Remember What Manipur Has Given India',
+  preTitle: hm("What Manipur Gave India"),
+  headline: hm('Before Asking India To Help Manipur'),
+  subheadline: hm('Remember What Manipur Has Given India'),
   items: [
     {
       id: 'mary-kom',
@@ -30,8 +40,7 @@ export const contributionData = {
       tag: 'World Champion',
       name: 'Mary Kom',
       role: 'Boxing Legend',
-      description:
-        'Six-time World Boxing Champion. Olympic medalist. A woman from Manipur who put India on the world map of boxing and became a symbol of resilience for every Indian girl.',
+      description: hm('Six-time World Boxing Champion. Olympic medalist. A woman from Manipur who put India on the world map of boxing and became a symbol of resilience for every Indian girl.'),
     },
     {
       id: 'mirabai',
@@ -50,8 +59,7 @@ export const contributionData = {
       tag: 'Cultural Heritage',
       name: 'The Birthplace of Polo',
       role: 'Sagol Kangjei — Ancient Sport',
-      description:
-        'The modern sport of polo was born in the valleys of Manipur. "Sagol Kangjei," played here for over 1,500 years, was introduced to the world through this land.',
+      description: hm('The modern sport of polo was born in the valleys of Manipur. "Sagol Kangjei," played here for over 1,500 years, was introduced to the world through this land.'),
     },
     {
       id: 'handloom',
@@ -60,8 +68,7 @@ export const contributionData = {
       tag: 'Living Tradition',
       name: 'Handloom & Textiles',
       role: 'GI-Tagged Heritage Craft',
-      description:
-        'Manipuri handloom — including the iconic Moirang Phee and Shaphee Lanphee — is a GI-tagged heritage that dresses India in culture. Every thread carries centuries of artistry.',
+      description: hm('Manipuri handloom — including the iconic Moirang Phee and Shaphee Lanphee — is a GI-tagged heritage that dresses India in culture. Every thread carries centuries of artistry.'),
     },
     {
       id: 'women',
@@ -70,8 +77,7 @@ export const contributionData = {
       tag: "Women's Power",
       name: "Meira Paibis",
       role: "Women's Rights Movement",
-      description:
-        "The 'Meira Paibis' — torch-bearing women of Manipur — have led peaceful protests for human rights and justice for decades. They are among the most powerful civil society voices in India.",
+      description: hm("The 'Meira Paibis' — torch-bearing women of Manipur — have led peaceful protests for human rights and justice for decades. They are among the most powerful civil society voices in India."),
     },
     {
       id: 'military',
@@ -80,8 +86,7 @@ export const contributionData = {
       tag: 'National Service',
       name: 'Military Contribution',
       role: 'Defenders of the Nation',
-      description:
-        'Thousands of soldiers from Manipur have served in the Indian Armed Forces — protecting our borders in Siachen, Kargil, and across every frontier. Manipur has always stood guard for India.',
+      description: hm('Thousands of soldiers from Manipur have served in the Indian Armed Forces — protecting our borders in Siachen, Kargil, and across every frontier. Manipur has always stood guard for India.'),
     },
   ],
 };
@@ -89,8 +94,7 @@ export const contributionData = {
 export const beforeAfterData = {
   preTitle: 'Same Land. Different Reality.',
   headline: 'A Community Transformed by Crisis',
-  subheadline:
-    'These images show two faces of the same Manipur. One is memory. The other is the present.',
+  subheadline: hm('These images show two faces of the same Manipur. One is memory. The other is the present.'),
   before: {
     label: 'Before',
     image: '/images/after.jpg',
@@ -115,15 +119,13 @@ export const timelineData = {
       id: 'e1',
       year: 'Centuries Old',
       title: 'A Land of Diverse Communities',
-      description:
-        'Manipur has long been home to the valley-dwelling Meiteis, the hill-dwelling Naga and Kuki-Zo communities, and dozens of other groups. Each community carries its own culture, language, and identity — all woven into the fabric of one state.',
+      description: hm('Manipur has long been home to the valley-dwelling Meiteis, the hill-dwelling Naga and Kuki-Zo communities, and dozens of other groups. Each community carries its own culture, language, and identity — all woven into the fabric of one state.'),
     },
     {
       id: 'e2',
       year: '1949',
       title: 'Merger with India',
-      description:
-        'Manipur acceded to the Indian Union in September 1949. Statehood arrived in 1972. The transition brought new administrative structures that reshaped land rights, representation, and community relationships.',
+      description: hm('Manipur acceded to the Indian Union in September 1949. Statehood arrived in 1972. The transition brought new administrative structures that reshaped land rights, representation, and community relationships.'),
     },
     {
       id: 'e3',
@@ -213,8 +215,8 @@ export const generationData = {
   image: '/images/children-1.jpg',
   imageAlt: 'Children of Manipur in a classroom, representing hope and disrupted futures',
   body: [
-    'Thousands of children across Manipur have had their education disrupted. Schools turned into relief camps. Teachers displaced. Exams missed. Childhoods interrupted.',
-    'The children of Manipur did not draw the lines that divide communities. They do not understand why they cannot go home, why their school is now someone\'s shelter, why their friends from the other side of the hill are no longer reachable.',
+    hm('Thousands of children across Manipur have had their education disrupted. Schools turned into relief camps. Teachers displaced. Exams missed. Childhoods interrupted.'),
+    hm('The children of Manipur did not draw the lines that divide communities. They do not understand why they cannot go home, why their school is now someone\'s shelter, why their friends from the other side of the hill are no longer reachable.'),
     'But they are growing up with these realities embedded in their earliest memories. What we do today will determine what kind of India they grow up to belong to.',
   ],
   quote: '"The biggest casualty of a prolonged conflict is always the generation that grows up inside it."',
@@ -225,11 +227,11 @@ export const silenceData = {
   line2: 'In Your City',
   line3: '—',
   line4: 'Would We Look Away?',
-  subtext: 'The people of Manipur are Indians. Their pain is India\'s responsibility.',
+  subtext: hm('The people of Manipur are Indians. Their pain is India\'s responsibility.'),
 };
 
 export const voiceData = {
-  preTitle: 'Voices of Manipur',
+  preTitle: hm('Voices of Manipur'),
   headline: 'Voices That Deserve\nTo Be Heard',
   subheadline:
     'These are composite accounts drawn from humanitarian reports and oral testimonies, shared to honor those whose stories represent thousands more.',
@@ -247,7 +249,7 @@ export const voiceData = {
       quote:
         '"I taught at the same school for 22 years. When I returned to see it, it was a shelter for 400 families. I cried — not from sadness for myself, but for the children who needed both."',
       name: 'A school teacher, 49',
-      role: 'Primary school teacher, inner Manipur',
+      role: hm('Primary school teacher, inner Manipur'),
       initial: 'T',
     },
     {
@@ -329,10 +331,10 @@ export const solutionsData = {
 };
 
 export const movementData = {
-  preTitle: 'India For Manipur',
-  headline: 'When Manipur Celebrated India\nIndia Celebrated.',
-  subheadline: 'When Manipur Suffers,\nIndia Must Stand Together.',
-  body: 'Manipur has carried India\'s flag in sports arenas, battlefields, and cultural stages across the world. Today, it is time for India to carry Manipur\'s story — to every city, every living room, every conversation.',
+  preTitle: hm('India For Manipur'),
+  headline: hm('When Manipur Celebrated India\nIndia Celebrated.'),
+  subheadline: hm('When Manipur Suffers,\nIndia Must Stand Together.'),
+  body: hm('Manipur has carried India\'s flag in sports arenas, battlefields, and cultural stages across the world. Today, it is time for India to carry Manipur\'s story — to every city, every living room, every conversation.'),
   stat: 'One nation. One responsibility.',
 };
 
@@ -345,11 +347,10 @@ export const ctaData = {
     'After The Conflict',
     'There Will Still Be People.',
   ],
-  headline: 'India For Manipur',
+  headline: hm('India For Manipur'),
   tagline: 'They Carried India\'s Pride. Let Us Carry Their Voice.',
   buttons: [
-    { label: 'Share The Story', id: 'share-btn', type: 'primary' },
-    { label: 'Join The Movement', id: 'join-btn', type: 'secondary' },
+    { label: 'Join The Movement', id: 'join-btn', type: 'primary' },
   ],
 };
 
@@ -362,7 +363,7 @@ export const footerData = {
     { label: 'Contact', href: 'mailto:contact@indiaformanipure.org' },
     { label: 'Privacy', href: '#privacy' },
   ],
-  copyright: `© ${new Date().getFullYear()} India For Manipur. All rights reserved.`,
+  copyright: hm(`© ${new Date().getFullYear()} India For Manipur. All rights reserved.`),
   disclaimer:
     'This website is a humanitarian awareness campaign. It does not represent any political party, government body, or armed group. All content is based on publicly available humanitarian reporting.',
 };

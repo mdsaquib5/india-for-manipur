@@ -545,6 +545,7 @@ export default function IndiaMap() {
               letterSpacing="0.18em"
               textAnchor="middle"
               fontWeight="600"
+              className="red-manipur"
             >
               MANIPUR
             </text>

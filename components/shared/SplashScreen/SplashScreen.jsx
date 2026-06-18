@@ -46,7 +46,7 @@ export default function SplashScreen({ onEnter }) {
           <span />
         </div>
 
-        <p className="splash__pre-title">India For Manipur</p>
+        <p className="splash__pre-title">India For <span className="red-manipur">Manipur</span></p>
 
         <h1 className="splash__headline">
           A Story That<br />
