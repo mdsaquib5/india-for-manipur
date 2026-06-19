@@ -16,6 +16,12 @@ export default function Home() {
       {/* 1. Hero — Do You Remember Manipur? */}
       <Hero />
 
+      {/* 2. What Needs To Happen */}
+      <Solutions />
+
+      {/* Final CTA */}
+      <CTA />
+
       {/* 2. What Manipur Gave India */}
       <Contribution />
 
@@ -37,14 +43,6 @@ export default function Home() {
       {/* 8. Voices of Manipur */}
       <Voices />
 
-      {/* 9. What Needs To Happen */}
-      <Solutions />
-
-      {/* 10. India For Manipur Movement */}
-      <Movement />
-
-      {/* Final CTA */}
-      <CTA />
     </>
   );
 }

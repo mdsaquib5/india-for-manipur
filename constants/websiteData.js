@@ -3,7 +3,7 @@ import React from 'react';
 export const hm = (text) => {
   if (typeof text !== 'string') return text;
   const parts = text.split(/(Manipur)/g);
-  return parts.map((part, index) => 
+  return parts.map((part, index) =>
     part === 'Manipur' ? <span key={index} className="red-manipur">Manipur</span> : part
   );
 };
@@ -280,52 +280,52 @@ export const voiceData = {
 };
 
 export const solutionsData = {
-  preTitle: 'The Path Forward',
-  headline: 'What Needs\nTo Happen',
+  preTitle: 'Restoring Manipur',
+  headline: 'What Peace\nTruly Demands',
   subheadline:
-    'Peace is not the absence of conflict. It is the presence of justice, safety, and dignity for every person.',
+    'Stopping the violence is just the baseline. Real peace means every child returns to school and every family can safely go home.',
   solutions: [
     {
       id: 'sol1',
-      icon: 'MdSecurity',
-      title: 'Protection',
+      icon: 'MdOutlineHealing',
+      title: 'Acknowledgment of Pain',
       description:
-        'All displaced persons must be protected regardless of community identity. Safe corridors, neutral humanitarian access, and accountability for violence.',
+        'Before healing can begin, the suffering must be recognized. The people of Manipur need the nation to acknowledge their loss, displacement, and the deep trauma they continue to endure.',
     },
     {
       id: 'sol2',
       icon: 'MdHomeWork',
-      title: 'Rehabilitation',
+      title: 'A Safe Return Home',
       description:
-        'Rebuilding destroyed homes and infrastructure. Dignified return of displaced families to their original communities, with security guarantees.',
+        'Relief camps are not homes. Every displaced family deserves the fundamental right to return to their original lands with absolute, unwavering guarantees of safety and dignity.',
     },
     {
       id: 'sol3',
-      icon: 'MdSchool',
-      title: 'Education',
+      icon: 'MdGavel',
+      title: 'Justice & Accountability',
       description:
-        'Reopening schools, restoring educational continuity, mental health support for children who have grown up inside a conflict, and bridging the academic gaps.',
+        'True peace cannot be built on impunity. There must be transparent investigations, unbiased justice, and strict accountability for the violence, destruction, and lives lost.',
     },
     {
       id: 'sol4',
-      icon: 'MdLocalHospital',
-      title: 'Healthcare',
+      icon: 'MdChildCare',
+      title: 'Saving A Generation',
       description:
-        'Strengthening medical access in all districts, prioritizing maternal care, mental health services, and the long-term health needs of displaced populations.',
+        'An entire generation has lost years of education and innocence. Prioritizing their schooling, trauma care, and physical security is critical to saving Manipur\'s future.',
     },
     {
       id: 'sol5',
-      icon: 'MdHandshake',
-      title: 'Dialogue',
+      icon: 'MdStorefront',
+      title: 'Economic Survival',
       description:
-        'Sustained, inclusive dialogue between all communities — not imposed from above, but built from within. Civil society, women\'s groups, and youth leaders must have a seat at every table.',
+        'Markets have burned, and lifelong livelihoods have vanished overnight. True recovery means aggressively rebuilding local economies so families can stand on their own feet again.',
     },
     {
       id: 'sol6',
-      icon: 'MdFavorite',
-      title: 'Peacebuilding',
+      icon: 'MdHandshake',
+      title: 'Grassroots Reconciliation',
       description:
-        'Long-term investment in community trust, shared narratives, and reconciliation. Peace is built slowly, person by person, community by community.',
+        'Lasting solutions cannot be imposed from the top down. Peace requires an honest, inclusive dialogue where ordinary citizens and community leaders have an equal voice at the table.',
     },
   ],
 };
@@ -340,12 +340,12 @@ export const movementData = {
 
 export const ctaData = {
   sequence: [
-    'Before The Conflict',
-    'There Were People.',
-    'During The Conflict',
-    'There Were People.',
-    'After The Conflict',
-    'There Will Still Be People.',
+    'They did not choose this conflict,',
+    'But they are living it.',
+    'We cannot undo the past,',
+    'But we can hear their pain.',
+    'One nation. One responsibility.',
+    'It is time to act.',
   ],
   headline: hm('India For Manipur'),
   tagline: 'They Carried India\'s Pride. Let Us Carry Their Voice.',

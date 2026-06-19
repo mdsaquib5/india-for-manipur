@@ -242,7 +242,8 @@ ol {
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, var(--accent-gold), #b8962e);
+  background: linear-gradient(135deg, var(--accent-gold), var(--accent-saffron), var(--accent-gold));
+  /* background: linear-gradient(135deg, var(--accent-gold), #b8962e); */
   color: var(--bg-primary);
   box-shadow: 0 4px 20px rgba(212, 175, 55, 0.25);
 }
@@ -798,14 +799,14 @@ ol {
 .before-after__slider {
   position: relative;
   width: 100%;
-  max-width: 900px;
-  margin: 0 auto;
+  /* max-width: 900px;
+  margin: 0 auto; */
   aspect-ratio: 16/9;
   border-radius: var(--radius-xl);
   overflow: hidden;
   cursor: ew-resize;
   user-select: none;
-  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.6);
+  /* box-shadow: 0 24px 80px rgba(0, 0, 0, 0.6); */
 }
 
 .before-after__img {
@@ -1386,15 +1387,13 @@ ol {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
-  max-width: 1000px;
-  margin: 0 auto;
 }
 
 .solutions__card {
   background: var(--bg-card);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-lg);
-  padding: 2.5rem 2rem;
+  padding: 2rem;
   transition: all var(--transition-medium);
   position: relative;
   overflow: hidden;
@@ -1532,7 +1531,7 @@ ol {
 .cta__line {
   display: block;
   font-family: var(--font-body);
-  font-size: clamp(1rem, 2.5vw, 1.3rem);
+  font-size: clamp(1rem, 2.5vw, 2rem);
   line-height: 1.8;
 }
 

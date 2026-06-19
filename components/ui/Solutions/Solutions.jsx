@@ -1,23 +1,23 @@
 'use client';
 import { motion } from 'framer-motion';
 import {
-  MdSecurity,
+  MdOutlineHealing,
   MdHomeWork,
-  MdSchool,
-  MdLocalHospital,
+  MdGavel,
+  MdChildCare,
+  MdStorefront,
   MdHandshake,
-  MdFavorite,
 } from 'react-icons/md';
 import SectionHeading from '@/components/shared/SectionHeading/SectionHeading';
 import { solutionsData } from '@/constants/websiteData';
 
 const iconMap = {
-  MdSecurity,
+  MdOutlineHealing,
   MdHomeWork,
-  MdSchool,
-  MdLocalHospital,
+  MdGavel,
+  MdChildCare,
+  MdStorefront,
   MdHandshake,
-  MdFavorite,
 };
 
 export default function Solutions() {

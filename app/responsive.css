@@ -152,6 +152,11 @@
     --section-padding: 52px 0;
   }
 
+  .generation__image-wrap {
+    height: 600px;
+    width: 100%;
+  }
+
   .container {
     padding: 0 1.25rem;
   }
