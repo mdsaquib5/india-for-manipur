@@ -281,7 +281,7 @@ export const voiceData = {
 
 export const solutionsData = {
   preTitle: 'Restoring Manipur',
-  headline: 'What Peace\nTruly Demands',
+  headline: 'What India Truly Demands',
   subheadline:
     'Stopping the violence is just the baseline. Real peace means every child returns to school and every family can safely go home.',
   solutions: [

@@ -16,17 +16,14 @@ export default function Home() {
       {/* 1. Hero — Do You Remember Manipur? */}
       <Hero />
 
+      {/* 2. What Manipur Gave India */}
+      <Contribution />
+
       {/* 2. What Needs To Happen */}
       <Solutions />
 
       {/* Final CTA */}
       <CTA />
-
-      {/* 2. What Manipur Gave India */}
-      <Contribution />
-
-      {/* 3. Before vs After — Same Land. Different Reality. */}
-      <BeforeAfter />
 
       {/* 4. What Happened — Timeline */}
       <Timeline />
@@ -40,8 +37,14 @@ export default function Home() {
       {/* 7. The Silence — Reflection */}
       <Silence />
 
-      {/* 8. Voices of Manipur */}
+      {/* 3. Before vs After — Same Land. Different Reality. */}
+      <BeforeAfter />
+
+      {/* 9. Voices of Manipur */}
       <Voices />
+
+      {/* 8. Movement */}
+      <Movement />
 
     </>
   );
