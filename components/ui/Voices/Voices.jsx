@@ -21,14 +21,7 @@ export default function Voices() {
   const prev = () => go(active === 0 ? voices.length - 1 : active - 1);
   const next = () => go(active === voices.length - 1 ? 0 : active + 1);
 
-  // Auto-advance every 6 seconds
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setDirection(1);
-      setActive((a) => (a === voices.length - 1 ? 0 : a + 1));
-    }, 6000);
-    return () => clearInterval(interval);
-  }, [voices.length]);
+
 
   const variants = {
     enter: () => ({ opacity: 0, y: 16 }),

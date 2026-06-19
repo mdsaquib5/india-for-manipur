@@ -53,11 +53,6 @@ export default function SplashScreen({ onEnter }) {
           <em>Must Be Heard</em>
         </h1>
 
-        <p className="splash__sub">
-          This experience includes ambient music.<br />
-          Press enter to begin.
-        </p>
-
         <button
           className={`splash__enter-btn ${pulse ? 'splash__enter-btn--pulse' : ''}`}
           onClick={handleEnter}
