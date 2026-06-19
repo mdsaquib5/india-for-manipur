@@ -77,6 +77,11 @@
     --navbar-height: 60px;
   }
 
+  .generation__image-wrap {
+    height: 600px;
+    width: 100%;
+  }
+
   /* Navbar */
   .navbar__links {
     display: none;
@@ -152,10 +157,7 @@
     --section-padding: 52px 0;
   }
 
-  .generation__image-wrap {
-    height: 600px;
-    width: 100%;
-  }
+
 
   .container {
     padding: 0 1.25rem;
